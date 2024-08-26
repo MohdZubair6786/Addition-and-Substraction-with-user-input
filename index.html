@@ -15,8 +15,10 @@
     <br>
     <button id="btn" onclick="add()">Adds '+'</button>
     <button id="btn" onclick="sub()">Subs '-'</button>
+    <button id="btn" onclick="mult()">Multiply '*'</button>
     <p id="para"></p>
     <p id="para1"></p>
+    <p id="para2"></p>
     <script>
         function add(){
     var a=parseFloat(document.getElementById('num1').value);
@@ -29,6 +31,12 @@ function sub(){
     var b=parseFloat(document.getElementById('num2').value);
     var c = a-b ;
     para1.innerHTML="Subtraction of " + a + " and " + b +" is " + c;
+}
+function mult(){
+    var a=parseFloat(document.getElementById('num1').value);
+    var b=parseFloat(document.getElementById('num2').value);
+    var c = a*b ;
+    para2.innerHTML="Multiplication of " + a + " and " + b +" is " + c;
 }
     </script>
 </body>
