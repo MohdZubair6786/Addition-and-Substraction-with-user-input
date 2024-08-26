@@ -14,13 +14,21 @@
     <input type="number" id="num2" required>
     <br>
     <button id="btn" onclick="add()">Adds '+'</button>
+    <button id="btn" onclick="sub()">Subs '-'</button>
     <p id="para"></p>
+    <p id="para1"></p>
     <script>
         function add(){
     var a=parseFloat(document.getElementById('num1').value);
     var b=parseFloat(document.getElementById('num2').value);
     var c = a+b ;
     para.innerHTML="sum of " + a + " and " + b +" is " + c;
+}
+function sub(){
+    var a=parseFloat(document.getElementById('num1').value);
+    var b=parseFloat(document.getElementById('num2').value);
+    var c = a-b ;
+    para1.innerHTML="Subtraction of " + a + " and " + b +" is " + c;
 }
     </script>
 </body>
